@@ -1,5 +1,17 @@
 # quarkus-system-stubs-bug Project
 
+This project is a reproduction for
+
+To reproduce the issue:
+
+1. clone this repo
+2. run `./mvnw verify` and observe the failure.
+
+The failing tests are in PierreBtz/quarkus-system-stubs-bug@main/src/test/java/eu/pierrebeitz/SystemStubsQuarkusTest.java. For comparison the exact same tests but running as "standard" junit tests are in PierreBtz/quarkus-system-stubs-bug@main/src/test/java/eu/pierrebeitz/SystemStubsTest.java
+
+
+-------
+
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .

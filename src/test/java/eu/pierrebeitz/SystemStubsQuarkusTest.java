@@ -1,7 +1,6 @@
 package eu.pierrebeitz;
 
 import io.quarkus.test.junit.QuarkusTest;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import uk.org.webcompere.systemstubs.environment.EnvironmentVariables;
@@ -20,7 +19,7 @@ class SystemStubsQuarkusTest {
     @Test
     void environmentVariableInFieldShouldBeSet() {
         environmentVariables.set("FOO", "BAR");
-        Assertions.assertEquals("BAR", System.getenv("FOO"));
+        assertEquals("BAR", System.getenv("FOO"));
     }
 
     @Test
